@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sketching</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+body{
+background-color: black;
+}
+h1{
+text-align: center;
+font-size: 30px;
+color: black;
+font-family: Engravers MT;
+}
+section{
+margin: 70px;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.wrapper{
+display: flex;
+width: 70%;
+justify-content: space-around;
+}
+.card{
+width: 280px;
+height: 360px;
+margin-right: 40px;
+padding: 2rem 1rem;
+background: #fff;
+position: relative;
+display: flex;
+align-items: flex-end;
+box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+transition: 0.5s ease-in-out;
+}
+.card:hover{
+transform: translateY(20px);
+}
+.card:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+width: 100%;
+height: 100%;
+background: linear-gradient(to bottom,rgba(0,176,155,0.5),rgba(150,201,61,1));
+z-index: 2;
+transition: 0.5s all;
+opacity: 0;
+}
+.card:hover:before{
+opacity: 1;
+}
+.card img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+}
+.card .info{
+position: relative;
+z-index: 3;
+color: #fff;
+opacity: 0;
+transform: translateY(30px);
+transition: 0.5s all;
+}
+.card:hover .info{
+opacity: 1;
+transform: translateY(0px);
+}
+.card .info h1{
+margin: 0;
+}
+.card .info p{
+letter-spacing: 1px;
+font-size: 15px;
+margin-top: 8px;
+margin-bottom: 20px;
+}
+.card .info .btn{
+text-decoration: none;
+padding: 0.5rem;
+background: #fff;
+color: #000;
+font-size: 14px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.4s ease-in-out;
+}
+.card .info .btn:hover{
+box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+background: red;
+}
+.S{  
+font-family: Engravers MT;
+text-shadow: 10px 10px 10px red;
+color: white;
+text-align: center;
+font-size: 40px;
+}
+
+    body{
+        background: url(https://wallpaperaccess.com/full/313595.jpg) no-repeat;
+            font-family: 'Roboto',sans-serif;
+            background-size: cover
+        }
+        nav{
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+       
+        .sidebar{
+            position: fixed;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: #042331;
+            transition: all .5s;
+        }
+        .sidebar header{
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            background: #063146;
+            user-select: none;
+        }
+        .sidebar ul a{
+            display: block;
+            height: 100%;
+            width: 100%;
+            font-family: castellar;
+           text-decoration: none;
+            line-height: 65px;
+            font-size: 20px;
+            color: white;
+            padding-left: 40ppx;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(255,255,255,.1);
+            border-bottom: 1px solid black;
+            transition: .4s;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li:hover a{
+            background-color: limegreen;
+            text-shadow: 10px 10px 10px black;
+            text-decoration: underline;
+            padding-left: 50px;
+            color: black;
+            font-weight: bold;
+        }
+        .sidebar ul a i{
+            margin-right: 16px;
+        }
+        #check{
+            display: none;
+        }
+        label #btn,label #cancel{
+            position: absolute;
+            cursor: pointer;
+            background: #042331;
+            border-radius: 3px;
+        }
+        label #btn{
+            left: 40px;
+            top: 25px;
+            font-size: 35px;
+            color: white;
+            padding: 6px 12px;
+            transition: all .5s;
+        }
+        label #cancel{
+            z-index: 1111;
+            left: -170px;
+            top: 70px;
+            font-size: 30px;
+            color: hotpink;
+            padding: 4px 9px;
+            transition: all .5s ease;
+        }
+        #check:checked ~ .sidebar{
+            left: 0;
+        }
+        #check:checked ~ label #btn{
+            left: 250px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        #check:checked ~ label #cancel{
+            left: 190px;
+            margin-top: 25px;
+        }
+        header{
+            font-family: Courier;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .fa{
+            color: hotpink;
+        }
+       label{
+            color: red;
+        }
+        label .fa{
+            color: red;
+        }
+        footer .fa {
+            padding: 20px;
+            text-align: center;
+            margin: 5px 2px;
+            font-size: 30px;
+            width: 50px;
+        }
+        footer .fa-facebook {
+            background: #3B5998;
+            color: white;
+            text-decoration: none;
+        }
+        footer .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            text-decoration: none;
+        }
+        footer .fa-linkedin {
+            background: #007bb5;
+            color: white;
+            text-decoration: none;
+        }
+        footer .fa-instagram {
+            background: #125688;
+            color: white;
+            text-decoration: none;
+        }
+        footer .fa-youtube {
+            background: #bb0000;
+            color: white;
+            text-decoration: none;
+        }
+        footer .fa-google {
+            background: #dd4b39;
+            color: white;
+            text-decoration: none;
+        }
+        footer .fa:hover {
+            opacity: 0.7;
+        }
+        footer{
+            background-color: pink;
+            margin-top: 100px;
+        }
+        footer article ul li{
+            color: black;
+            font-weight: bolder;
+        }
+        footer article ul li:hover{
+            text-decoration: none;
+        }
+        footer article ul li a{
+            color: black;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        footer article ul li a:hover{
+            color:green;
+        }
+        footer ul li:hover a{
+            background-color: pink;
+        }
+        footer h1{
+            color: black;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: Georgia;
+            text-shadow: 7px 7px 10px orangered;   
+        }
+        footer h2{
+            color: red;
+            font-family: Palatino Linotype;
+        }
+        .ss{
+
+           font-family: algerian;
+           text-decoration: none;
+           font-style: italic;
+           font-size: 50px;
+           color: red;
+        }
+        form{
+           text-align: right;
+        }
+        #query{
+            border-style: solid;
+            border-radius: 10px;
+            border-color: black;
+            font-family: Arial black;
+            width: 250px;
+            height: 35px;
+        }
+        #icon{
+            color: white;
+            font-size: 18px;
+            text-shadow: 5px 5px 5px black;
+        }
+</style>
+</head>
+<body>
+        <script>
+        function goback(){
+            history.back();
+        }
+    </script>
+
+<header>
+<center class="S">Types Of Sketching</center>
+<form id="form">
+  <i id=icon class="fa fa-fw fa-search"></i><input type="search" id="query" name="q" placeholder="Search...">
+</header>
+<nav>
+        <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa fa-fw fa-bars" id="btn"></i>
+        <i class="fa fa-fw fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>MY APP</header>
+        <ul>
+            <li><a href="#"><i class="fa fa-fw fa-qrcode"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-link"></i>Shortcuts</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-bandcamp"></i>Overview</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-calendar"></i>Events</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-question-circle"></i>About</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-sliders"></i>Services</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+            <li><a href="Art gallery(main).html" onclick="return Logout()" id="log"><label><i class="fa fa-fw fa-sign-out"></i>Log Out</label></a></li>
+            <li ><a href="#" onclick="goback();"><label><i class="fa fa-fw fa-angle-double-left"></i>Back</label></a></li>
+       </ul>
+
+    </div>
+</nav>
+
+
+    <section>
+<div class="wrapper">
+<div class="card">
+<img src="https://mymodernmet.com/wp/wp-content/uploads/2022/02/david-zinn-chalk-art-3.jpg">
+<div class="info">
+<h1>Chalk Art</h1>
+<p>Chalk art is the use of chalk on a surface as a visual art.It is similar to art using pastels and related to sidewalk art that often uses chalk. Chalk art is often used in restaurants, shops or walls.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/originals/1e/d0/75/1ed075030be26da03bf8623407efaac8.jpg">
+<div class="info">
+<h1>Charcoal Art</h1>
+<p>Charcoal paintings date as far back as ca.23,000 BC. Since then, many cultures have utilized charcoal for art, camouflage, and in rites of passage.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/originals/70/8a/54/708a547f5399172c997a7ff9e121729b.jpg">
+<div class="info">
+<h1>Conte Crayon</h1>
+<p>Conté crayons are the drawing medium composed of compressed powdered graphite or charcoal mixed with a clay base, square in cross section.They were invented in 1795 by Nicolas-Jacques Conté.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+</div>
+    </section>
+
+    <section>
+<div class="wrapper">
+<div class="card">
+<img src="https://images.template.net/wp-content/uploads/2016/12/22115742/Pen-Ink-Surreal-Soul-Drawing.jpg">
+<div class="info">
+<h1>Pen and Ink</h1>
+<p>In fine art, the term 'pen and ink' denotes a drawing technique involving the use of black and other coloured inks which are applied to a support with either a dip pen or a reservoir pen.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6OQPpiV-l2h9Qmyhf-ZPyy4NELyG6FF-RMgytMBZmtET0LGGbI2MGZhKlZLnVKApdxqo&usqp=CAU">
+<div class="info">
+<h1>Pastel Art</h1>
+<p>A pastel is an art medium in the form of a stick, consisting of powdered pigment and a binder.Pastel used as a verb means to produce an artwork with pastels; as an adjective it means pale in color.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://i2.wp.com/arabicmehndidesign.com/wp-content/uploads/2020/10/Drawing-Easy-Ideas-For-Girls-With-Pencil-14.png?fit=575%2C581&ssl=1">
+<div class="info">
+<h1>Pencil Art</h1>
+<p>Pencil Art, drawing executed with an instrument composed of graphite enclosed in a wood casing and intended either as a sketch for a more elaborate work in another medium or a finished work.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+</div>
+    </section>
+    <script type="text/javascript">
+        function Logout(){
+            var a=window.confirm("Are you sure want to exit ?");
+            if(a){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+
+    <footer>
+        <article>
+        <h2 style="color: red;">Contact us</h2>
+        <ul>
+            <li>phone:+91-9498358079,8691587068</li>
+            <li>Email:artpage@gmail.com</li>
+        </ul>
+    </article>
+    <article>
+        <h2 style="color: red;">Other Links:</h2>
+        <ul>
+            <li><a href=""> Register as an instructor</a></li>
+            <li><a href="#">Instructor login</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </article>
+    <article>
+        <h2 style="color: red;">Quick Links</h2>
+        <ul>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Private policy</a></li>
+        </ul>
+    </article>
+    <article>
+            <h2 style="color: red;">Connect with us:</h2>
+            <a href="#" class="fa fa-facebook"> </a>
+            <a href="#" class="fa fa-twitter"> </a>
+            <a href="#" class="fa fa-linkedin"> </a>
+            <a href="#" class="fa fa-instagram"> </a>
+            <a href="#" class="fa fa-youtube"> </a>
+            <a href="#" class="fa fa-google"> </a>
+    <h2 style="float: right;color: red;">&copy; <label class="ss" style="color: red;">SS </label> Creations</h2>
+</article>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ART PAGE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+h1{
+color: black;
+text-align: center;
+font-size: 30px;
+font-family: Engravers MT;
+}
+.heading{
+font-family: Engravers MT;
+text-shadow: 10px 10px 10px red;
+color: lightgray;
+text-align: center;
+font-size: 40px;
+}
+section{
+margin: 70px;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.wrapper{
+display: flex;
+width: 70%;
+justify-content: space-around;
+}
+.card{
+width: 280px;
+height: 360px;
+margin-right: 40px;
+padding: 2rem 1rem;
+background: #fff;
+position: relative;
+display: flex;
+align-items: flex-end;
+box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+transition: 0.5s ease-in-out;
+}
+.card:hover{
+transform: translateY(20px);
+}
+.card:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+width: 100%;
+height: 100%;
+background: linear-gradient(to bottom,rgba(0,176,155,0.5),rgba(150,201,61,1));
+z-index: 2;
+transition: 0.5s all;
+opacity: 0;
+}
+.card:hover:before{
+opacity: 1;
+}
+.card img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+}
+.card .info{
+position: relative;
+z-index: 3;
+color: black;
+opacity: 0;
+transform: translateY(30px);
+transition: 0.5s all;
+}
+.card:hover .info{
+opacity: 1;
+transform: translateY(0px);
+}
+.card .info h1{
+margin: 0;
+}
+.card .info p{
+letter-spacing: 1px;
+font-size: 15px;
+margin-top: 8px;
+margin-bottom: 20px;
+}
+.card .info .btn{
+text-decoration: none;
+padding: 0.5rem;
+background: #fff;
+color: #000;
+font-size: 14px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.4s ease-in-out;
+}
+.card .info .btn:hover{
+box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+background: red;
+}
+.hist,.slp,.lsa,.ani{
+    font-size: 29px;
+}
+
+    body{
+            background: url("https://bestwallpapers.in/wp-content/uploads/2018/05/material-style-tapet-colorful-pattern-4k-wallpaper-1440x2560.jpg") no-repeat;
+            font-family: 'Roboto',sans-serif;
+            background-size: cover;
+        }
+        nav{
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+       
+        .sidebar{
+            position: fixed;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: hotpink;
+            transition: all .5s;
+        }
+        .sidebar header{
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            background: #063146;
+            user-select: none;
+        }
+        .sidebar ul a{
+            display: block;
+            height: 100%;
+            width: 100%;
+            font-family: castellar;
+           text-decoration: none;
+            line-height: 65px;
+            font-size: 20px;
+            color: white;
+            padding-left: 40ppx;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(255,255,255,.1);
+            border-bottom: 1px solid black;
+            transition: .4s;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li:hover a{
+            text-shadow: 10px 10px 10px black;
+            text-decoration: underline;
+            padding-left: 50px;
+            color: black;
+            font-weight: bolder;
+        }
+        .sidebar ul a i{
+            margin-right: 16px;
+        }
+        #check{
+            display: none;
+        }
+        label #btn,label #cancel{
+            position: absolute;
+            cursor: pointer;
+            background: deeppink;
+            border-radius: 3px;
+        }
+        label #btn{
+            left: 40px;
+            top: 25px;
+            font-size: 35px;
+            color: white;
+            padding: 6px 12px;
+            transition: all .5s;
+        }
+        label #cancel{
+            z-index: 1111;
+            left: -170px;
+            top: 70px;
+            font-size: 30px;
+            color: green;
+            padding: 4px 9px;
+            transition: all .5s ease;
+        }
+        #check:checked ~ .sidebar{
+            left: 0;
+        }
+        #check:checked ~ label #btn{
+            left: 250px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        #check:checked ~ label #cancel{
+            left: 190px;
+            margin-top: 40px;
+        }
+        header{
+            font-family: Courier;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .fa{
+            color: green;
+        }
+        form{
+            text-align: right;
+        }
+        #query{
+            border-style: solid;
+            border-radius: 10px;
+            border-color: black;
+            font-family: Arial black;
+            width: 250px;
+            height: 40px;
+        }
+        #icon{
+            color: white;
+            font-size: 18px;
+            text-shadow: 5px 5px 5px black ;
+        }
+        #log{
+            color: black;
+            font-family: forte;
+            font-size: 25px;
+        }
+       #log .fa{
+            color: black;
+        }
+        .ss{
+
+    font-family: algerian;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 50px;
+    color: white;
+    background-color:purple;
+    border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<header>
+<center class="heading">ART GALLERY</centre>
+    <form id="form">
+  <i id=icon class="fa fa-fw fa-search"></i><input type="search" id="query" name="q" placeholder="Search...">
+</form>
+</header>
+<nav>
+        <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa fa-fw fa-bars" id="btn"></i>
+        <i class="fa fa-fw fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>MY APP</header>
+        <ul>
+            <li><a href="#"><i class="fa fa-fw fa-qrcode"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-link"></i>Shortcuts</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-bandcamp"></i>Overview</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-calendar"></i>Events</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-question-circle"></i>About</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-sliders"></i>Services</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+            <li><a href="Art gallery(main).html"><i class="fa fa-fw fa-sign-out"></i>Logout</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+    <section>
+<div class="wrapper">
+<div class="card">
+<img src="https://render.fineartamerica.com/images/rendered/square-dynamic/small/images/artworkimages/mediumlarge/1/olive-grove-valerie-anne-kelly.jpg">
+<div class="info">
+<h1>Nature Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.rv7d292ccKfJtPUtry0fEAHaHJ?pid=ImgDet&rs=1">
+<div class="info">
+<h1>Animal Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/f0/bc/fc/f0bcfc48a972074caf2f519407aec885--anchor-string-art-nail-string-art.jpg">
+<div class="info">
+<h1>Pattern Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+</div>
+    </section>
+
+    <section>
+<div class="wrapper">
+<div class="card">
+<img src="https://th.bing.com/th/id/R.fab1c897f28b36c58adde2d0a073e505?rik=DuTV%2fvSzv20GSw&riu=http%3a%2f%2fwww.chesterfieldsbronzes.com%2fwp-content%2fuploads%2fFlushed-Pheasant-Fine-Art-Wildlife-Painting-Chester-Fields.jpg&ehk=L4oz2AkPurIzT6BdgO%2fkH8qoPvcBlPJOrjDxe3oZOws%3d&risl=&pid=ImgRaw&r=0">
+<div class="info">
+<h1>Fine Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://www.artmajeur.com/medias/hd/b/o/borismust/artwork/11549492_abstract-surrealism-ii.jpg">
+<div class="info">
+<h1>Abstract Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/0e/22/3d/0e223db95ec5836fea39be5a73adcd18--red-wine-glasses-red-wines.jpg">
+<div class="info">
+<h1>Modern Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+</div>
+    </section>
+
+    <section>
+<div class="wrapper">
+<div class="card">
+<img src="https://bestanimations.com/Humans/Hands/hand-gif-animation-4.gif">
+<div class="info">
+<h1 class="ani">Animation  Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://ih0.redbubble.net/image.454349038.4895/raf,360x360,075,t,fafafa:ca443f4786.jpg">
+<div class="info">
+<h1>Design Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/originals/eb/73/49/eb7349d2f2754f6e51b68a658a26d12b.jpg">
+<div class="info">
+<h1>Sketching</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="Sketching.html" class="btn">Read More >></a>
+</div>
+</div>
+</div>
+    </section>
+
+    <section>
+<div class="wrapper">
+<div class="card">
+<img src="https://i.pinimg.com/originals/7e/ec/30/7eec30ffc14873b95a44f8d8f70649d2.jpg">
+<div class="info">
+<h1>Painting Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="Painting.html" class="btn">Read More >></a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://th.bing.com/th/id/R.c6e6a961e08540eec41025444f6c5c7e?rik=fLNv8UNBrGrKzg&riu=http%3a%2f%2fcafmp.com%2fwp-content%2fuploads%2f2012%2f12%2fThe-Avengers-America.jpg&ehk=bzttIpsnKniGQvKJzWaLMXOk7VRWwUfNJj%2bwVemmc3Q%3d&risl=&pid=ImgRaw&r=0">
+<div class="info">
+<h1>Poster Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/originals/ba/46/fa/ba46fabb85d23e8eb4d830dd3856c198.jpg">
+<div class="info">
+<h1>Rock Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+</div>
+    </section>
+
+    <section>
+<div class="wrapper">
+<div class="card">
+<img src="https://cdn.acidcow.com/pics/20130611/epic_sand_art_10.jpg">
+<div class="info">
+<h1>Sand Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images-na.ssl-images-amazon.com/images/I/71XVALkIarL.jpg">
+<div class="info">
+<h1>Graphity Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.EMibvxf9NFKu63X6cZ8VFAHaHa?pid=ImgDet&rs=1">
+<div class="info">
+<h1>Jewellery Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+</div>
+    </section>
+ 
+    <section>
+<div class="wrapper">
+<div class="card">
+<img src="https://a.1stdibscdn.com/archivesE/1stdibs/021214/ShowplaceCC_DM/92/DSC_0949.jpg">
+<div class="info">
+<h1>Sculpture Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="Sculptures.html" class="btn">Read More >></a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://th.bing.com/th/id/R.433d83f7e481f35245f8c6bb7c7591d8?rik=8J8oNGewh8LJLw&riu=http%3a%2f%2fgifimage.net%2fwp-content%2fuploads%2f2017%2f11%2fintroduction-animation-gif-10.gif&ehk=rVyh5TYTsLSTlR%2bltggfQqEGFpKRHWYm3Uf8roJOWTw%3d&risl=&pid=ImgRaw&r=0">
+<div class="info">
+<h1>Video Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.1b3bjg-7D-G7jcx8wgKpcwHaE7?pid=ImgDet&rs=1">
+<div class="info">
+<h1>Public Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+</div>
+    </section>
+
+    <section>
+<div class="wrapper">
+<div class="card">
+<img src="https://www.boredart.com/wp-content/uploads/2016/05/glass-animals-1.jpg">
+<div class="info">
+<h1>Glass Art </h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/1009/4178/products/LushDesignstreesvase_medium.jpg?v=1590673590">
+<div class="info">
+<h1>Ceramic Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://th.bing.com/th/id/R.e596f3757f846b0c62656752c025f807?rik=AU6xrDKdYL2E%2fg&riu=http%3a%2f%2fwww.artfixdaily.com%2fimages%2ffl%2f251_1381500x829.jpg&ehk=sfoxmFu2kuOzIo55zqVATHeP%2biOfSCrPBLJFFK5uoKI%3d&risl=&pid=ImgRaw&r=0">
+<div class="info">
+<h1 class="lsa">LandScape Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+</div>
+    </section>
+
+    <section>
+<div class="wrapper">
+<div class="card">
+<img src="https://th.bing.com/th/id/R.a99485081c3cf88f37898c0fab8ed7ad?rik=Ze2GJQHEd%2fT60Q&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fhadezign%2fhobbies%2f256%2fArt-icon.png&ehk=%2b3QY12S3IkQynzOV%2feKlTCUVxgZrPaljXbmmrWPCoYw%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1">
+<div class="info">
+<h1>Icon Art</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.rdEyKnLzbZWpftqlCJvfDgHaLZ?pid=ImgDet&rs=1">
+<div class="info">
+<h1 class="hist">Historical Painting</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://th.bing.com/th/id/OIP.v1WCKgjiC_5DwTopRIhfGgHaL2?pid=ImgDet&rs=1">
+<div class="info">
+<h1 class="slp">Still-life Painting</h1>
+<p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+</div>
+    </section>
+    <footer>
+    <h2 style="float: right;color: white;background-color: purple;border-radius: 50%;">&copy; <label class="ss">SS </label> Creations </h2>
+</footer>
+</body>
+</html>

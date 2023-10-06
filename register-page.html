@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+body{
+background-image: url(https://wallpapercave.com/wp/ibG1tbs.jpg);
+
+background-size: cover;
+background-repeat: no-repeat;
+text-align:left;
+color: white;
+text-align: center;
+font-size: 20px;
+}
+h1{
+color: lightgreen;
+text-shadow: 3px 5px 10px black;
+    font-family: Lucida Handwriting;
+}
+table{
+width: 350px;
+margin: 20px auto;
+font-family: georgia;
+}
+
+input[type="text"],[type="date"],[type="password"],select,[type="email"],[type="number"]{
+width: 100%;
+height: 45px;
+text-align: center;
+font-size: 20px;
+margin-top: 5px;
+padding: 5px;
+border: 2px solid skyblue;
+border-radius: 15px;
+}
+input[type="radio"]{
+width: 30px;
+height: 25px;
+font-size: 20px;
+margin-top: 5px;
+padding: 5px;
+}
+
+input[type="submit"]{
+background-color:#123456;
+border: 2px solid white;
+font-family: georgia;
+font-weight: bold;
+color: white;
+width: 100%;
+height: 45px;
+border-radius: 100px;
+font-size: 20px;
+margin-top: 5px;
+padding: 5px;
+border-right: 8px;
+cursor: pointer;
+}
+
+input:hover{
+background-color: orange;
+color: black;
+}
+select:hover{
+background-color: orange;
+color: black;
+}
+input:focus{
+background-color: orange;
+border: 2px solid fuchsia;
+outline: none;
+}
+select:focus{
+background-color: orange;
+border: 2px solid fuchsia;
+outline: none;
+}
+input[type="submit"]:hover{
+background-color: fuchsia;
+color: black;
+}
+input[type="submit"]:focus{
+background-color: fuchsia;
+color: black;
+}
+
+.name{
+background-image: url(https://th.bing.com/th/id/OIP.bzEmvp7jSfekbiqCu-wg3gHaHa?pid=ImgDet&rs=1);
+background-position: 5px 5px;
+background-repeat: no-repeat;
+background-size: 30px 30px;
+}
+
+.email{
+background-image: url(https://i0.wp.com/www.mappingmegan.com/wp-content/uploads/2017/01/icon-email-icon-clip-art-at-clker-com-vector-qafaq-e-mail-icon-trace-0.png?fit=960%2C960&ssl=1);
+background-position: 5px 3px;
+background-repeat: no-repeat;
+background-size: 35px 35px;
+}
+
+.mobile{
+background-image: url(https://th.bing.com/th/id/R.f08d7651d722078f684978a9e34b36da?rik=S4xdarIFUSpyCg&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fbTy%2fo4z%2fbTyo4z8nc.png&ehk=98SOyBickYBH%2blwzKpo%2fywOxty7d%2bSDGFPfF91T6dmo%3d&risl=&pid=ImgRaw&r=0);
+background-position: 10px 3px;
+background-repeat: no-repeat;
+background-size: 20px 35px;
+}
+
+.dob{
+background-image: url(https://th.bing.com/th/id/OIP.ToJxZeHDbXcwlL_idzSqwQHaHa?pid=ImgDet&rs=1);
+background-position: 5px 3px;
+background-repeat: no-repeat;
+background-size: 35px 35px;
+}
+
+.password{
+background-image: url(https://th.bing.com/th/id/OIP.fCxxDxPTmM-IDp3Yc9hstwHaHa?pid=ImgDet&rs=1);
+background-position: 5px 3px;
+background-repeat: no-repeat;
+background-size: 35px 35px;
+}
+
+.country{
+background-image: url(https://th.bing.com/th/id/R.900c4f9c29a1acef55bb2302b9c917d2?rik=WYpUv2NrtYJAIg&riu=http%3a%2f%2fdreamicus.com%2fdata%2fearth%2fearth-03.jpg&ehk=cQSalT2eHwTTBhI8BfNPRDoQXBwu8MA6HTqyNmk%2b%2fEg%3d&risl=&pid=ImgRaw&r=0);
+background-position: 5px 3px;
+background-repeat: no-repeat;
+background-size: 35px 35px;
+}
+.gender{
+font-size: x-large;
+margin-top: 2px;
+margin-bottom: 2px;
+color: yellow;
+}
+p{
+color:pink;
+text-shadow: 3px 5px 10px black;
+font-size: x-large;
+font-family: High Tower Text;
+}
+a{
+color: red;
+text-shadow: none;
+font-size: large;
+font-family: calibri;
+text-decoration: none;
+}
+a:hover{
+color: yellow;
+font-size: x-large;
+    text-decoration: underline;
+    font-family: algerian;
+}
+</style>
+</head>
+<body>
+<h1>ART GALLERY</h1>
+<form action="#" method="post">
+<table>
+<tr>
+<td>
+<select class="country">
+<option value="select your country">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Your Country</option>
+<option value="India">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India</option>
+<option value="USA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USA</option>
+<option value="Australia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia</option>
+<option value="Newyork">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Newyork</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" placeholder="Your First Name" class="name"/>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" placeholder="Your Last Name" class="name"/>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" placeholder="Your Email Name" class="email"/>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="text" placeholder="Your Mobile Number" class="mobile">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="date" class="dob"/>
+</td>
+</tr>
+
+<tr>
+<td class="gender">Gender:
+<input type="radio" name="gender" value="Male " checked />Male
+<input type="radio" name="gender" value="Female " />Female
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="password" name="pass1" placeholder="Enter Your password" class="password" />
+<input type="password" name="pass2" placeholder="Confirm Your password" class="password" />
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="submit" name="register" value="Register"/>
+</td>
+</tr>
+</table>
+</form>
+<p>Already Registered?<a href="login-page.html"> Login Here</a></p>
+</body>
+</html>
